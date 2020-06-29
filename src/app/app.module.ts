@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.Module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+import { DashboardService } from './modules/dashboard.service';
+
 
 @NgModule({
   declarations: [
@@ -22,8 +24,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SharedModule
     
     
+    
   ],
-  providers: [],
+  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
