@@ -11,9 +11,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
-import { AreaComponent } from './widgets/area/area.component';
-import {HighchartsChartModule} from 'highcharts-angular';
 
+import {HighchartsChartModule} from 'highcharts-angular';
+import { AreaComponent } from './widgets/area/area.component';
+import {CardComponent} from './widgets/card/card.component';
+import { PieComponent } from './widget/pie/pie.component';
 
 
 
@@ -22,8 +24,11 @@ import {HighchartsChartModule} from 'highcharts-angular';
   HeaderComponent,
   FooterComponent,
   SidebarComponent,
-  AreaComponent
+  AreaComponent,
+  CardComponent,
+  PieComponent
   ],
+  
   imports: [
     CommonModule,
     MatDividerModule,  
@@ -41,7 +46,9 @@ import {HighchartsChartModule} from 'highcharts-angular';
   HeaderComponent,
   FooterComponent,
   SidebarComponent,
-  AreaComponent
+  AreaComponent,
+  CardComponent,
+  PieComponent
   ]
 })
 export class SharedModule { }

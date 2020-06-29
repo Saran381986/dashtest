@@ -7,7 +7,8 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-@Output() toggleSideBarForMe: EventEmitter<any>=new EventEmitter()
+@Output() toggleSideBarForMe: EventEmitter<any>=new EventEmitter();
+
   constructor() { }
 
   ngOnInit()  {}
