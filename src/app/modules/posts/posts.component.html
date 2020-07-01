@@ -1,1 +1,8 @@
-<p>posts works!</p>
+
+<h1 style="font: bold;text-align: center;color:coral;">User Data from JSON</h1>
+<div *ngFor='let post of posts' class="post-card">
+    <h2 style="font-style: italic;color: darkgreen;">{{post.name}}-{{post.id}}</h2>
+    <p>{{post.email}}</p>
+
+</div>
+<router-outlet></router-outlet>

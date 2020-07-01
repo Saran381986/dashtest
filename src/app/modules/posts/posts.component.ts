@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/user.model';
+import { UserdataService } from 'src/app/userdata.service';
 
 @Component({
   selector: 'app-posts',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+  posts:User[];
+  constructor( private userdataservice:UserdataService) {
 
-  ngOnInit(): void {
-  }
+   }
+
+  ngOnInit() {
+    return this.userdataservice.getUsers()
+    .subscribe(userdata=>this.posts=userdata);
+    
+      }
 
 }

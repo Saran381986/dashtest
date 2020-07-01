@@ -8,11 +8,15 @@ import { DefaultModule } from './layouts/default/default.Module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 import { DashboardService } from './modules/dashboard.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UserdataService } from './userdata.service';
+import { WeatherWidgetMainComponent } from './components/weather-widget-main/weather-widget-main.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherWidgetMainComponent
     
     
   ],
@@ -21,12 +25,12 @@ import { DashboardService } from './modules/dashboard.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule,
-    SharedModule
-    
-    
+    SharedModule,
+    HttpClientModule
+        
     
   ],
-  providers: [DashboardService],
+  providers: [DashboardService,UserdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

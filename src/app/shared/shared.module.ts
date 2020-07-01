@@ -16,6 +16,7 @@ import {HighchartsChartModule} from 'highcharts-angular';
 import { AreaComponent } from './widgets/area/area.component';
 import {CardComponent} from './widgets/card/card.component';
 import { PieComponent } from './widget/pie/pie.component';
+// import { WeatherWidgetMainComponent } from '../components/weather-widget-main/weather-widget-main.component';
 
 
 

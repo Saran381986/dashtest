@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.bigChart=this.dashboardService.bigChart();
     this.cards=this.dashboardService.cards();
-    this.pieChart=this.dashboardService.pieChart();
+    this.pieChart=this.dashboardService.pieChart();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
   }
 
 }
