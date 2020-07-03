@@ -11,12 +11,14 @@ import { DashboardService } from './modules/dashboard.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UserdataService } from './userdata.service';
 import { WeatherWidgetMainComponent } from './components/weather-widget-main/weather-widget-main.component';
+import { WeatherapiComponent } from './weatherapi/weatherapi.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherWidgetMainComponent
+    WeatherWidgetMainComponent,
+    WeatherapiComponent
     
     
   ],
