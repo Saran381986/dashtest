@@ -13,6 +13,8 @@ import { UserdataService } from './userdata.service';
 import { WeatherWidgetMainComponent } from './components/weather-widget-main/weather-widget-main.component';
 import { WeatherapiComponent } from './weatherapi/weatherapi.component';
 
+import{AgmCoreModule} from '@agm/core';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,12 @@ import { WeatherapiComponent } from './weatherapi/weatherapi.component';
     BrowserAnimationsModule,
     DefaultModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey:''
+    })
+    
+    
         
     
   ],

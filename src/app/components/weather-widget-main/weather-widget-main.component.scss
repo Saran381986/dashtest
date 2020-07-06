@@ -1,0 +1,16 @@
+agm-map{
+height: 25rem;
+}
+h5,h2{
+    font-family:oswald,sans-serif;
+    color: green($color: #000000)  ;
+    font-weight: 500;
+    line-height: 33px;
+    margin-top: 2rem;
+}
+
+h2,.temp{
+    color: blue($color: #000000);
+    font-size: 18px;
+    font-weight: 600;
+}
