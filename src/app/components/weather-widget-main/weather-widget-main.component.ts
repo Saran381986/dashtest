@@ -14,15 +14,15 @@ export class WeatherWidgetMainComponent implements OnInit {
   lng;
   weather;
   city;
-  locationDenied:boolean=true;
-  locationDeniedEnableCity=false;
+  // locationDenied:boolean=true;
+  // locationDeniedEnableCity=false;
 
   constructor(private WeatherdataService:WeatherdataService) { }
 
 
   ngOnInit() {
-    this.getLocation();
-  //  this.getCity('Bangalore');
+   this.getLocation();
+   this.getCity('Bangalore');
   }
 
 
@@ -33,10 +33,10 @@ if("geolocation" in navigator){
   navigator.geolocation.watchPosition((success)=>{
     this.lat=success.coords.latitude;
     this.lon=success.coords.longitude;
-    console.log('this.lat : '+this.lat);
-    console.log('this.lng : '+this.lng);
+    // console.log('this.lat : '+this.lat);
+    // console.log('this.lng : '+this.lng);
 
-    this.WeatherdataService.getWeatherDataByCoords(this.lat,this.lng).subscribe(data=>{
+    this.WeatherdataService.getWeatherDataByCoords(this.lat,this.lon).subscribe(data=>{
       this.weather=data;
     });
     })

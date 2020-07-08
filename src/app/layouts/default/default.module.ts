@@ -14,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { DashboardService } from 'src/app/modules/dashboard.service';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
   

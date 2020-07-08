@@ -12,15 +12,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserdataService } from './userdata.service';
 import { WeatherWidgetMainComponent } from './components/weather-widget-main/weather-widget-main.component';
 import { WeatherapiComponent } from './weatherapi/weatherapi.component';
-
+import { UserFormComponent } from './user-form/user-form.component';
 import{AgmCoreModule} from '@agm/core';
+import{FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherWidgetMainComponent,
-    WeatherapiComponent
+    WeatherapiComponent,
+    UserFormComponent
     
     
   ],
@@ -31,6 +34,7 @@ import{AgmCoreModule} from '@agm/core';
     DefaultModule,
     SharedModule,
     HttpClientModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey:''
     })
