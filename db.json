@@ -1,11 +1,9 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  
+  "profiles":[ 
+    {"id":1,"name":"Saranya","age":34},
+    {"id":2,"name":"Saravana","age":8},
+    {"id":3,"name":"Dhaya","age":45}
+  
+ ]
 }
